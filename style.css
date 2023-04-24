@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://rare-gallery.com/mocahbig/1303326-Turtwig-Pokmon-Dawn-PokmonPokmon-HD-Wallpaper.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+
+
+}
+#header {
+      background-image: url("https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f594f042-0236-4a04-844d-73f67f3fc500/width=1200/f594f042-0236-4a04-844d-73f67f3fc500.jpeg"),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f594f042-0236-4a04-844d-73f67f3fc500/width=1200/f594f042-0236-4a04-844d-73f67f3fc500.jpeg");
+
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 4rem 6rem 4rem;
+}
+#header h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  margin: 10 0 2rem 0;
+  text-align: center;
+  color: white;
+}
+#header p {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-top: -0.25rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+#header p a {
+  color: white;
+  text-decoration: underline dotted rgba(255, 255, 255, 0.5) 0.05em;
+  text-underline-offset: 0.25em;
+}
+
+
+#nav-bar {
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.175);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -4rem auto 0 auto;
+  padding: 0, 2rem, 0, 0;
+  max-width: 72rem;
+
+}
+#nav-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 100%;
+
+}
+#nav-bar ul li {
+    list-style-type: none;
+    height: 100%;
+
+}
+#nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  font-size: 0.8rem;
+  display: flex; /*a tag is inline, so have to make it a "block" element to adjust its width and height*/
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 2rem;
+
+}
+
+#nav-bar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#nav-bar ul .active a {
+  color: #1e252d;
+  background-color: white;
+}
+#nav-bar ul .active a:hover {
+  color: lightblue;
+  background-color: white;
+}
+
+#blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#grid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    padding: 0px;
+    row-gap: 1px;
+    column-gap: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+.grid-item {
+  background-color: lightblue;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  length: 10px
+}
+#headline {
+    background-color: aquamarine;
+}
+@media only screen
+    and (min-device-width : 500px) {
+        #header {
+        background-image: url("https://rare-gallery.com/mocahbig/1303326-Turtwig-Pokmon-Dawn-PokmonPokmon-HD-Wallpaper.jpg"),
+            linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+            }
+}
+
+
+@media only screen
+    and (max-device-width : 500px) {
+
+        #header p {
+        font-family: "Merriweather", Georgia, serif;
+        font-size: 1rem;
+        font-style: italic;
+        margin-top: 10rem;
+        text-align: center;
+        color: white;
+        margin-bottom: 1rem;
+        line-height: 1rem;
+        }
+}
+
+
