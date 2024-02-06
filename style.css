@@ -140,6 +140,17 @@ body {
 #headline {
     background-color: aquamarine;
 }
+#headline div {
+  margin: auto;
+  display: flex;
+  width: 50%;
+}
+#headline div button {
+    background-color: #7FFFEE;
+    filter: brightness(170%);
+    margin: auto; /*margin property to auto to horizontally center the element within its container.*/
+}
+
 @media only screen
     and (min-device-width : 500px) {
         #header {
